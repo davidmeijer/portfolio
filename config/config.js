@@ -4,19 +4,23 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-	name: "Hashir",
+	name: "David",
 	links: [
 		{
 			title: "About",
 			link: "#about",
 		},
 		{
-			title: "Projects",
+			title: "Projects & Publications",
 			link: "#projects",
 		},
 		{
 			title: "Contact",
 			link: "#contact",
+		},
+		{
+			title: "Blog",
+			link: "/blog"
 		},
 		{
 			title: "Links",
@@ -25,18 +29,18 @@ export const navigation = {
 	],
 }
 export const intro = {
-	title: "Hey, I'm Hashir",
-	description: "A Computer Engineer creating mobile apps and static websites.",
+	title: "Hey, I'm David",
+	description: "A computational biologists with a passion for natural products.",
 	image: profile.src,
 	buttons: [
 		{
-			title: "Contact Me",
+			title: "Contact me",
 			link: "#contact",
 			isPrimary: true,
 		},
 		{
 			title: "Resume",
-			link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+			link: "https://drive.google.com/file/d/15D9bM_Ivs5faLwDP7oxQ5xl78VCYV8QE/view?usp=sharing",
 			isPrimary: false,
 		},
 	],
@@ -45,9 +49,9 @@ export const intro = {
 export const about = {
 	title: "Who I am",
 	description: [
-		"I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-		"The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-		"When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+		"I recently graduated with distinction from the MSc Bioinformatics program at Wageningen University in the Netherlands. Currently, I am furthering my MSc research project on elucidating the path from mined metabolic gene clusters to bioactive natural products, as a PhD candidate.",
+		"My interests lay on the intersection between natural products, biotechnology, and software development - I have interdisciplenary knowledge on analytical chemistry, industrial fermentation, algorithm development, dynamic modeling and parameter optimization, and machine learning.",
+		"Feel free to reach out and lets talk (bio|chem)informatics!",
 	],
 }
 
@@ -55,56 +59,43 @@ export const work = {
 	title: "What I do",
 	cards: [
 		{
-			title: "Mobile App Development",
-			description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+			title: "PhD candidate",
+			description: "I help elucidating the path from genotype to interactome at Wageningen University.",
 			icons: null,
 		},
 		{
-			title: "Web Development",
-			description: "I create responsive static websites using Reactjs.",
+			title: "Modeling fermentation",
+			description: "I make proprietary dynamic fermentation models for testing bioreactor setups.",
+			icons: null,
+		},
+		{
+			title: "Learning Mandarin",
+			description: "I am pursuing a lifelong wish to learn to speak Standard Northern Mandarin.",
 			icons: null,
 		}
 	],
 }
 
 export const projects = {
-	title: "Projects",
+	title: "Projects & Publications",
 	cards: [
 		{
-			title: "StarBook",
-			description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+			title: "Molray",
+			description: "Ray-tracer for drawing 3D filled-space molecular depictions, written in F#.",
 			icons: [
 				{
-					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-				},
-				{
 					icon: faGithub,
-					link: "https://github.com/hashirshoaeb/star_book",
+					link: "https://github.com/davidmeijer/molray",
 				},
 			]
 		},
 		{
-			title: "QuranTalk",
-			description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-			icons: [
-				{
-					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-				},
-				{
-					icon: faGooglePlay,
-					link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-				},
-			]
-		},
-		{
-			title: "Portfolio",
-			description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+			title: "SMILES spell checker",
+			description: "Spell checker for SMILES chemical representations, written in F#.",
 			icons: [
 				{
 					icon: faGithub,
-					link: "https://github.com/hashirshoaeb/portfolio",
+					link: "https://github.com/davidmeijer/smiles_spell_checker",
 				},
 			]
 		},
@@ -113,16 +104,16 @@ export const projects = {
 
 export const contact = {
 	title: "Get in touch",
-	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+	description: "Feel free to reach out by email or message me on Twitter!",
 	buttons: [
 		{
-			title: "Email Me",
-			link: "mailto:hashirshoaeb@gmail.com",
+			title: "Email me",
+			link: "mailto:david.meijer@wur.nl",
 			isPrimary: true,
 		},
 		{
-			title: "Schedule Meeting",
-			link: "",
+			title: "Message me",
+			link: "https://twitter.com/techmeijer",
 			isPrimary: false,
 		},
 	]
@@ -131,35 +122,31 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
 	// 50 - 60 char  
-	title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-	description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+	title: "David Meijer",
+	description: "Elucidating the path from genotype to interactome.",
 	image: profile.src,
 }
 
 export const links = {
 	image: profile.src,
-	title: "@hashirshoaeb",
-	description: "Computer Engineer | Flutter | Reactjs Developer",
+	title: "David Meijer",
+	description: "Computational biologist | Cheminformatician | F# enthusiast",
 	cards: [
 		{
 			title: "My website",
-			link: "https://hashirshoaeb.com/",
+			link: "https://davidmeijer.com/",
 		},
 		{
-			title: "QuranTalk App",
-			link: "https://www.qurantalk.app/",
-		},
-		{
-			title: "StarBook App",
-			link: "https://starbook.dev/",
+			title: "My Twitter",
+			link: "https://twitter.com/techmeijer",
 		},
 		{
 			title: "My GitHub",
-			link: "https://github.com/hashirshoaeb/",
+			link: "https://github.com/davidmeijer/",
 		},
 		{
 			title: "My LinkedIn",
-			link: "https://www.linkedin.com/in/hashirshoaeb/",
+			link: "https://www.linkedin.com/in/davidmeijerbif/",
 		},
 	]
 }
