@@ -91,7 +91,7 @@ export const projects = {
 		},
 		{
 			title: "SMILES spell checker",
-			description: "Spell checker for SMILES chemical representations, written in F#.",
+			description: "Spell checker for SMILES chemical representations, written in Python.",
 			icons: [
 				{
 					icon: faGithub,
