@@ -1,5 +1,7 @@
 Developer's portfolio forked from @hashirshoaeb. 
 
+---
+
 Install dependencies:
 ```
 npm install
