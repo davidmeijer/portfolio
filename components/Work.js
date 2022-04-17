@@ -25,7 +25,7 @@ export const Projects = ({ title, cards }) => {
 	return (
 		<div id="projects" className="bg-primary py-5 px-5">
 			<div className="container">
-				<h1 className="text-light fw-bold">Projects & Publications</h1>
+				<h1 className="text-light fw-bold">Projects</h1>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
 						<Card

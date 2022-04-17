@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGraduationCap, faDatabase, faEye } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
 	name: "David",
@@ -11,7 +11,7 @@ export const navigation = {
 			link: "#about",
 		},
 		{
-			title: "Projects & Publications",
+			title: "Projects",
 			link: "#projects",
 		},
 		{
@@ -61,7 +61,12 @@ export const work = {
 		{
 			title: "PhD candidate",
 			description: "I help elucidating the path from genotype to interactome at Wageningen University.",
-			icons: null,
+			icons: [
+				{
+					icon: faGraduationCap,
+					link: "https://www.wur.nl/en/Persons/David-D-David-Meijer-MSc.htm"
+				}
+			],
 		},
 		{
 			title: "Modeling fermentation",
@@ -70,15 +75,44 @@ export const work = {
 		},
 		{
 			title: "Learning Mandarin",
-			description: "I am pursuing a lifelong wish to learn to speak Standard Northern Mandarin.",
+			description: "I am pursuing a lifelong wish to learn to speak Standard Northern Mandarin fluently.",
 			icons: null,
 		}
 	],
 }
 
 export const projects = {
-	title: "Projects & Publications",
+	title: "Projects",
 	cards: [
+		{
+			title: "DONPHAN",
+			description: "A web repository for bioactive compounds.",
+			icons: [
+				{
+					icon: faDatabase,
+					link: "https://donphan-database.github.io/#/Molecule",
+				},		
+				{
+					icon: faGithub,
+					link: "https://github.com/donphan-database",
+				},
+			]
+		},
+		{
+			title: "monomer-aligner",
+			description: "Platform for researching polyketide substructure motifs. Work in progress.",
+			icons: [
+				{	
+					icon: faGithub,
+					link: "https://github.com/davidmeijer/monomer-aligner",
+				},
+			]
+		},
+		{
+			title: "TERP",
+			description: "Tailoring enzyme regioselectivity predictor for biosynthetic gene cluster compounds. Work in progress.",
+			icons: []
+		},
 		{
 			title: "Molray",
 			description: "Ray-tracer for drawing 3D filled-space molecular depictions, written in F#.",
@@ -89,16 +123,30 @@ export const projects = {
 				},
 			]
 		},
-		{
-			title: "SMILES spell checker",
-			description: "Spell checker for SMILES chemical representations, written in Python.",
+		{	
+			title: "mol2html",
+			description: "3dmol.js wrapper for creating HTML pages for showing molecules.",
 			icons: [
 				{
+					icon: faEye,
+					link: "https://davidmeijer.com/daptomycin.html",
+				},
+				{
 					icon: faGithub,
-					link: "https://github.com/davidmeijer/smiles_spell_checker",
+					link: "https://github.com/davidmeijer/mol2html",
 				},
 			]
 		},
+		{
+			title: "pyvista-molecule",
+			description: "PyVista wrapper for drawing hi-res 3D molecular conformers. Work in progress.",
+			icons: [
+				{
+					icon: faGithub,
+					link: "https://github.com/davidmeijer/pyvista-molecule",
+				},
+			]
+		}
 	],
 }
 
