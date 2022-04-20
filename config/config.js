@@ -30,7 +30,7 @@ export const navigation = {
 }
 export const intro = {
 	title: "Hey, I'm David",
-	description: "A computational biologists with a passion for natural products.",
+	description: "Computational biologist with a passion for natural products.",
 	image: profile.src,
 	buttons: [
 		{
