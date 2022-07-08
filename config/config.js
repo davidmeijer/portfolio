@@ -73,11 +73,11 @@ export const work = {
 			description: "I make proprietary dynamic fermentation models for testing bioreactor setups.",
 			icons: null,
 		},
-		{
-			title: "Learning Mandarin",
-			description: "I am pursuing a lifelong wish to learn to speak Standard Northern Mandarin fluently.",
-			icons: null,
-		}
+		// {
+		// 	title: "Learning Mandarin",
+		// 	description: "I am pursuing a lifelong wish to learn to speak Standard Northern Mandarin fluently.",
+		// 	icons: null,
+		// }
 	],
 }
 
